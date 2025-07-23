@@ -1,1 +1,280 @@
- @import "tailwindcss"
+/* shared styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.light_silver {
+    color: #8987A1;
+}
+
+.light_dark {
+    color: #252432;
+}
+
+.deep_dark {
+    color: #000000;
+}
+
+.font_orange {
+    color: #E95A08;
+}
+
+.bg_orange {
+    background-color: #E95A08;
+}
+
+
+/* navbar related styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav_item a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav_item {
+    list-style: none;
+
+}
+
+.nav_ul {
+    display: flex;
+    gap: 48px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_home {
+
+    font-weight: 900;
+}
+
+
+/* banner related styles */
+.banner {
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    align-items: flex-end;
+}
+
+.banner_tittle {
+    font-size: 3.75rem;
+}
+
+.banner_description {
+    font-size: 1.375rem;
+}
+
+.navbar,
+.banner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* our plants related styles */
+.our_plants {
+    margin-top: 120px;
+}
+
+.op_tittle {
+    font-size: 3.125rem;
+    text-align: center;
+}
+
+.op_description {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* card related styles */
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.card {
+    max-width: 270px;
+
+}
+
+.card_img {
+    margin-bottom: 30px;
+}
+
+.card_name,
+.card_price {
+    text-align: center;
+}
+
+.card_name {
+    color: #111111;
+    font-size: 1.4rem;
+    font-weight: medium;
+}
+
+.card_price {
+    color: #111111;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.card_btn {
+    width: 100%;
+    color: #FFFFFF;
+    height: 50px;
+    border: none;
+    margin-top: 30px;
+
+}
+
+/* plants lovers related styles */
+
+.plant_lovers {
+    display: flex;
+    gap: 60px;
+    margin-top: 210px;
+}
+
+.pl_div1 , .pl_div2
+{
+    width: 50%;
+}
+
+.pl_tittle {
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
+.pl_description {
+    font-size: 1.375rem;
+    font-weight: regular;
+}
+
+
+ .pl_img_wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.pl_img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.badge {
+    position: absolute;
+    top: -120px;
+    right: -90px;
+    width: 286px; 
+    height: auto;
+}
+
+
+
+/* responsive for mobile */
+@media screen and (max-width:576px) {
+
+    .nav_home,
+    .nav_shop,
+    .nav_about {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        margin-bottom: 0px;
+    }
+
+    .banner_description {
+        font-size: .875rem;
+    }
+
+
+    .hero_image {
+        width: 100%;
+    }
+
+    .our_plants {
+        margin-top: 0px;
+
+    }
+
+    .op_tittle,
+    .banner_tittle {
+        font-size: 1.5rem;
+    }
+
+    .op_description {
+        font-size: .875rem;
+
+    }
+
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card_img {
+        width: 100%;
+    }
+
+    .card_name,
+    .card_price {
+        font-size: 1rem;
+    }
+   .plant_lovers {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pl_div1,
+    .pl_div2 {
+        width: 100%;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .pl_tittle {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .pl_description {
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
