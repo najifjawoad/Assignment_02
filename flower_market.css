@@ -47,6 +47,7 @@ main {
 }
 
 
+
 /* navbar related styles */
 .navbar {
     display: flex;
@@ -193,12 +194,24 @@ main {
     display: block;
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
 .badge {
     position: absolute;
     top: -120px;
     right: -90px;
     width: 286px;
     height: auto;
+    animation: spin 5s linear infinite;
 }
 
 /* latest deals related styles */
@@ -309,7 +322,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+
 }
 
 .join_tittle {
@@ -397,8 +410,10 @@ main {
         width: 100%;
     }
 
+
     .badge {
         display: none;
+
     }
 
     .pl_tittle {
@@ -444,10 +459,10 @@ main {
     }
 
     .join_div {
-     
+
         height: 350px;
         width: 100%;
-        
+
     }
 
     .join_tittle {
@@ -456,24 +471,25 @@ main {
         font-size: 20px;
     }
 
-    
 
-    .join_inner_div
-    { height:50 ;
+
+    .join_inner_div {
+        height: 50;
         width: 300px;
-        
+
     }
-    #email_input
-    {
+
+    #email_input {
         width: 70%;
     }
+
     .join_btn {
         width: 30%;
-        padding:0;
+        padding: 0;
         font-size: 16px;
-    
-    
-} 
+
+
+    }
 
 
 
