@@ -202,23 +202,23 @@ main {
 }
 
 /* latest deals related styles */
-.ld_tittle
-{
-    margin-top:134px ;
+.ld_tittle {
+    margin-top: 134px;
     text-align: center;
-    font-size:3.125rem ;
+    font-size: 3.125rem;
     font-weight: bold;
 }
-.ld_description
-{
+
+.ld_description {
     font-size: 1.375rem;
     font-weight: regular;
     text-align: center;
     margin-bottom: 120px;
 }
+
 .latest_deals_div {
     display: flex;
-    gap:28px;
+    gap: 28px;
 }
 
 
@@ -253,15 +253,15 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 14px;
-   
+
 }
-.div1_P
-{
+
+.div1_P {
     font-size: 1.25rem;
     color: #FFFFFF;
 }
-.div1_a
-{
+
+.div1_a {
     font-size: 1rem;
     color: #FFFFFF;
 }
@@ -277,7 +277,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
     height: 424px;
     border-radius: 22px;
 
@@ -294,41 +294,42 @@ main {
     font-size: 1.75rem;
     color: #FFFFFF;
 }
+
 /* join section related styles */
-.join{
+.join {
     margin-top: 120px;
 }
 
-.join_div
-{
+.join_div {
     background-image: url(assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 540px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
 }
-.join_tittle
-{
+
+.join_tittle {
     font-weight: bold;
     color: #FFFFFF;
     font-size: 3.125rem;
 }
-#email_input
-{
+
+#email_input {
     height: 50px;
     width: 645px;
 }
-.join_inner_div
-{
+
+.join_inner_div {
     display: flex;
     gap: 0px;
 }
-.join_btn
-{
-    padding: 15px 40px;
+
+.join_btn {
+    padding: 10px 40px;
     color: #FFFFFF;
     font-size: 1rem;
     border: none;
@@ -409,34 +410,71 @@ main {
         text-align: left;
         font-size: 1rem;
     }
-    .ld_tittle
-    {
+
+    .ld_tittle {
         font-size: 24px;
     }
-    .ld_description{
+
+    .ld_description {
         font-size: 14px;
         margin-bottom: 50px;
     }
-    .latest_deals_div
-    {
+
+    .latest_deals_div {
         flex-direction: column;
     }
-    .ld_div1 , .ld_div2 
-    {
+
+    .ld_div1,
+    .ld_div2 {
         width: 100%;
-        
+
     }
-    .ld_div2 
-    {
+
+    .ld_div2 {
         height: 200px;
         gap: 20px;
     }
-    #zabo
-    {
+
+    #zabo {
         font-size: 20px;
     }
-    #zabo_shop
-    {
+
+    #zabo_shop {
         font-size: 16px;
     }
+
+    .join_div {
+     
+        height: 350px;
+        width: 100%;
+        
+    }
+
+    .join_tittle {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+
+    
+
+    .join_inner_div
+    { height:50 ;
+        width: 300px;
+        
+    }
+    #email_input
+    {
+        width: 70%;
+    }
+    .join_btn {
+        width: 30%;
+        padding:0;
+        font-size: 16px;
+    
+    
+} 
+
+
+
 }
